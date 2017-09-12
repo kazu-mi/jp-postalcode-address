@@ -1,7 +1,7 @@
 {
   "name": "jp-postalcode-address",
-  "version": "1.0.4",
-  "description": "Japanese postal code convert to address powerd by zipcloudAPI",
+  "version": "1.1.0",
+  "description": "Japanese postal code convert to address powerd by GoogleMapsAPI",
   "main": "./index.js",
   "scripts": {
     "build": "babel src -d dist",
