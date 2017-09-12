@@ -1,6 +1,6 @@
 {
   "name": "jp-postalcode-address",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Japanese postal code convert to address powerd by zipcloudAPI",
   "main": "./index.js",
   "scripts": {
