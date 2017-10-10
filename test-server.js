@@ -8,6 +8,7 @@ var jp = require('./index');
 console.log(jp);
 
 jp('182-0033', function (result) {
+  console.log(result);
   console.log(result.response.location);
 }, function (error) {
   console.log(error);

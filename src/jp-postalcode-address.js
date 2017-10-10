@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import 'whatwg-fetch';
 import 'es6-promise';
 
 import Consts from './consts';

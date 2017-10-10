@@ -1,6 +1,6 @@
 {
   "name": "jp-postalcode-address",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "description": "Japanese postal code convert to address powerd by GoogleMapsAPI",
   "main": "./index.js",
   "scripts": {
