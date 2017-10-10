@@ -1,4 +1,4 @@
-import 'isomorphic-fetch';
+import fetch from 'node-fetch';
 import 'es6-promise';
 
 import Consts from './consts';

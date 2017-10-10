@@ -7,8 +7,8 @@ http.createServer(function (req, res) {
 var jp = require('./index');
 console.log(jp);
 
-jp('1820033', function (response) {
-  console.log(response);
+jp('182-0033', function (result) {
+  console.log(result.response.location);
 }, function (error) {
   console.log(error);
 });

@@ -11,47 +11,69 @@ npm i --save jp-postalcode-address
 ```.js
 var JpPostalcode = require('jp-postalcode-address');
 
-JpPostalCode('160-0021', 
+JpPostalCode('182-0033', 
   function (successJson) { }, 
   function (error) { });
 
-JpPostalCode('1600021', 
+// or
+
+JpPostalCode('1820033', 
   function (successJson) { }, 
   function (error) { });
 ```
 
 ## response
 
-using zipcloud api
+using geoapi.heartrails
 
-http://zipcloud.ibsnet.co.jp/doc/api
+http://geoapi.heartrails.com/api.html#postal
 
 ```.js
 {
-	"message": null,
-	"results": [
-		{
-			"address1": "北海道",
-			"address2": "美唄市",
-			"address3": "上美唄町協和",
-			"kana1": "ﾎｯｶｲﾄﾞｳ",
-			"kana2": "ﾋﾞﾊﾞｲｼ",
-			"kana3": "ｶﾐﾋﾞﾊﾞｲﾁｮｳｷｮｳﾜ",
-			"prefcode": "1",
-			"zipcode": "0790177"
-		},
-		{
-			"address1": "北海道",
-			"address2": "美唄市",
-			"address3": "上美唄町南",
-			"kana1": "ﾎｯｶｲﾄﾞｳ",
-			"kana2": "ﾋﾞﾊﾞｲｼ",
-			"kana3": "ｶﾐﾋﾞﾊﾞｲﾁｮｳﾐﾅﾐ",
-			"prefcode": "1",
-			"zipcode": "0790177"
-		}
-	],
-	"status": 200
+	response: {
+		location: [ 
+			{
+				city: '調布市',
+				city_kana: 'ちょうふし',
+				town: '富士見町一丁目',
+				town_kana: 'ふじみちょう',
+				x: '139.535803',
+				y: '35.66014',
+				prefecture: '東京都',
+				postal: '1820033'
+			},
+			{ 
+				city: '調布市',
+				city_kana: 'ちょうふし',
+				town: '富士見町二丁目',
+				town_kana: 'ふじみちょう',
+				x: '139.540821',
+				y: '35.658786',
+				prefecture: '東京都',
+				postal: '1820033' 
+			},
+			{ 
+				city: '調布市',
+				city_kana: 'ちょうふし',
+				town: '富士見町三丁目',
+				town_kana: 'ふじみちょう',
+				x: '139.540118',
+				y: '35.663991',
+				prefecture: '東京都',
+				postal: '1820033' 
+			},
+			{ 
+				city: '調布市',
+				city_kana: 'ちょうふし',
+				town: '富士見町四丁目',
+				town_kana: 'ふじみちょう',
+				x: '139.535702',
+				y: '35.666325',
+				prefecture: '東京都',
+				postal: '1820033' 
+				}
+			]
+	},
 }
 ```
 
